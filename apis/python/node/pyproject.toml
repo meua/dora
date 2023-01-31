@@ -7,3 +7,10 @@ name = "dora-rs"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
+
+
+[project.optional-dependencies]
+# the Arrow memory format is stable between 4.0 and 5.0-SNAPSHOTS
+# (which the Rust libraries use to take advantage of Rust API changes).
+# NOTE: keep this list in sync with show_versions()
+pyarrow = ["pyarrow>=4.0.0"]
