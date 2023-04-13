@@ -92,3 +92,7 @@ path = "examples/python-operator-dataflow/run.rs"
 [[example]]
 name = "benchmark"
 path = "examples/benchmark/run.rs"
+
+[patch.crates-io.shared_memory]
+git = "https://github.com/phil-opp/shared_memory.git"
+branch = "read-only"
